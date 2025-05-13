@@ -1,0 +1,28 @@
+{
+  "name": "midas-touch",
+  "displayName": "Midas Touch",
+  "publisher": "vshakitskiy",
+  "description": "Wiskiy's custom theme, inspired by Kiss Of Life",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vshakitskiy/midas_touch"
+  },
+  "icon": "icon.jpg",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Midas Touch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Midas-Touch-color-theme.json"
+      }
+    ]
+  }
+}
