@@ -11,7 +11,7 @@
     "editorWarning.foreground": "#FF8FA3",
     "editorError.foreground": "#FF8080",
     "editorOverviewRuler.border": "#101010",
-    "editorGutter.addedBackground": "#ff002f",
+    "editorGutter.addedBackground": "#ff6767",
     "editorGutter.deletedBackground": "#FF8080",
     "editorGutter.modifiedBackground": "#FF8FA3",
     "diffEditor.insertedTextBackground": "#FF4D6D15",
