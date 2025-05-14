@@ -4,9 +4,9 @@ on:
       - "*"
   workflow_dispatch:
 
-name: Deploy Extension
+name: Deploy Extension On VS Marketplace
 jobs:
-  deploy:
+  deploy-vsm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

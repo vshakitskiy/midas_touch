@@ -4,9 +4,9 @@ on:
       - "*"
   workflow_dispatch:
 
-name: Deploy Extension
+name: Deploy Extension On VSX Registry
 jobs:
-  deploy:
+  deploy-vsx:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
