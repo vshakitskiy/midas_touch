@@ -3,7 +3,7 @@
   "displayName": "Midas Touch",
   "publisher": "vshakitskiy",
   "description": "Wiskiy's custom theme, inspired by Kiss Of Life",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.100.0"
   },
