@@ -1,25 +1,21 @@
 {
   "name": "Midas Touch",
   "colors": {
-    // ---- Editor Core ----
     "editor.background": "#101010",
     "editor.foreground": "#ffe3eb",
     "editor.selectionBackground": "#ffe3eb3e",
     "editor.selectionHighlightBackground": "#ffe3eb3e",
     "editorLineNumber.foreground": "#505050",
     "editorWidget.background": "#101010",
-    // ---- Editor States & Diagnostics ----
     "editorWarning.foreground": "#FF8FA3",
     "editorError.foreground": "#FF8080",
-    // ---- Editor Gutter & Diff ----
-    "editorGutter.addedBackground": "#ff002f",
+    "editorGutter.addedBackground": "#FF8FA380",
     "editorGutter.deletedBackground": "#FF8080",
     "editorGutter.modifiedBackground": "#FF8FA3",
     "diffEditor.insertedTextBackground": "#FF4D6D15",
     "diffEditor.insertedLineBackground": "#FF4D6D15",
     "diffEditor.removedTextBackground": "#FF808015",
     "diffEditor.removedLineBackground": "#FF808015",
-    // ---- Editor Features ----
     "editorInlayHint.foreground": "#989898",
     "editorInlayHint.background": "#1C1C1C",
     "editorBracketHighlight.foreground1": "#8e8e8e",
@@ -32,13 +28,11 @@
     "editorHoverWidget.background": "#161616",
     "editorHoverWidget.border": "#282828",
     "editorOverviewRuler.border": "#101010",
-    // ---- Terminal / Console ----
     "terminal.background": "#101010",
     "terminal.foreground": "#ffe3eb",
-    "terminalCursor.background": "#FF8FA3",
-    "terminalCursor.foreground": "#101010",
+    "terminalCursor.background": "#101010",
+    "terminalCursor.foreground": "#FF8FA3",
     "terminal.selectionBackground": "#ffe3eb3e",
-    // ANSI Colors - Midas Touch / Catppuccin Mocha Inspired
     "terminal.ansiBlack": "#181818",
     "terminal.ansiBrightBlack": "#6c7086",
     "terminal.ansiRed": "#F38BA8",
@@ -55,7 +49,6 @@
     "terminal.ansiBrightCyan": "#94E2D5",
     "terminal.ansiWhite": "#CDD6F4",
     "terminal.ansiBrightWhite": "#BAC2DE",
-    // ---- Sidebar & Activity Bar ----
     "sideBar.background": "#101010",
     "sideBarTitle.foreground": "#8e8e8e",
     "sideBarSectionHeader.background": "#101010",
@@ -63,8 +56,7 @@
     "activityBar.background": "#101010",
     "activityBar.foreground": "#8e8e8e",
     "activityBarBadge.background": "#FF8FA3",
-    "activityBarBadge.foreground": "#000",
-    // ---- TitleBar, Tabs & Editor Groups ----
+    "activityBarBadge.foreground": "#000000",
     "titleBar.activeBackground": "#101010",
     "titleBar.inactiveBackground": "#101010",
     "titleBar.activeForeground": "#7E7E7E",
@@ -75,17 +67,15 @@
     "tab.activeBorder": "#171717",
     "tab.unfocusedActiveBorder": "#171717",
     "tab.inactiveBackground": "#101010",
-    // ---- Status Bar ----
     "statusBar.background": "#101010",
     "statusBar.foreground": "#8e8e8e",
     "statusBar.noFolderBackground": "#101010",
     "statusBar.debuggingBackground": "#A4133C",
     "statusBar.debuggingForeground": "#ffe3eb",
     "statusBarItem.remoteBackground": "#FF8FA3",
-    "statusBarItem.remoteForeground": "#000",
+    "statusBarItem.remoteForeground": "#000000",
     "statusBarItem.remoteHoverBackground": "#FF4D6D",
-    "statusBarItem.remoteHoverForeground": "#000",
-    // ---- Lists & Trees ----
+    "statusBarItem.remoteHoverForeground": "#000000",
     "list.activeSelectionBackground": "#232323",
     "list.activeSelectionForeground": "#FF8FA3",
     "list.inactiveSelectionBackground": "#232323",
@@ -94,32 +84,59 @@
     "list.errorForeground": "#FF8080",
     "tree.inactiveIndentGuidesStroke": "#50505030",
     "tree.indentGuidesStroke": "#50505060",
-    // ---- Buttons & Badges ----
     "button.background": "#FF8FA3",
-    "button.foreground": "#000",
+    "button.foreground": "#000000",
     "button.hoverBackground": "#FF4D6D",
     "badge.background": "#FF8FA3",
-    "badge.foreground": "#000",
-    // ---- Inputs & Controls ----
+    "badge.foreground": "#000000",
     "input.background": "#1C1C1C",
     "inputOption.activeBorder": "#FF8FA3",
-    // ---- Focus, Borders & Selection ----
     "focusBorder": "#FF8FA3",
     "contrastBorder": "#00000000",
     "contrastActiveBorder": "#00000000",
     "list.focusOutline": "#FF8FA3",
-    "selection.background": "#666",
-    // ---- Scrollbar ----
+    "selection.background": "#666666",
     "scrollbarSlider.background": "#34343480",
     "scrollbarSlider.hoverBackground": "#343434",
-    // ---- Miscellaneous UI ----
+    "menu.background": "#1C1C1C",
+    "menu.foreground": "#ffe3eb",
+    "menu.separatorBackground": "#505050",
+    "menu.border": "#282828",
+    "menu.selectionBackground": "#232323",
+    "menu.selectionForeground": "#FF8FA3",
+    "menu.selectionBorder": "#00000000",
+    "menu.disabledForeground": "#707070",
+    "quickInput.background": "#1C1C1C",
+    "quickInput.foreground": "#ffe3eb",
+    "quickInputTitle.background": "#101010",
+    "quickInputList.focusBackground": "#232323",
+    "quickInputList.focusForeground": "#FF8FA3",
+    "quickInputList.focusIconForeground": "#FF8FA3",
+    "peekView.border": "#FF8FA3",
+    "peekViewEditor.background": "#1C1C1C",
+    "peekViewEditorGutter.background": "#1C1C1C",
+    "peekViewResult.background": "#101010",
+    "peekViewResult.fileForeground": "#8e8e8e",
+    "peekViewResult.lineForeground": "#ffe3eb",
+    "peekViewResult.matchHighlightBackground": "#FF4D6D15",
+    "peekViewResult.selectionBackground": "#232323",
+    "peekViewResult.selectionForeground": "#FF8FA3",
+    "peekViewTitle.background": "#101010",
+    "peekViewTitleDescription.foreground": "#707070",
+    "peekViewTitleLabel.foreground": "#ffe3eb",
+    "gitDecoration.addedResourceForeground": "#A6E3A1",
+    "gitDecoration.modifiedResourceForeground": "#89B4FA",
+    "gitDecoration.deletedResourceForeground": "#FF8080",
+    "gitDecoration.untrackedResourceForeground": "#F9E2AF",
+    "gitDecoration.ignoredResourceForeground": "#707070",
+    "gitDecoration.conflictingResourceForeground": "#F5C2E7",
+    "gitDecoration.submoduleResourceForeground": "#8e8e8e",
     "icon.foreground": "#8e8e8e",
     "textLink.foreground": "#FF8FA3",
     "textLink.activeForeground": "#FF4D6D",
     "settings.modifiedItemIndicator": "#FF8FA3"
   },
   "tokenColors": [
-    // ---- General Code Tokens ----
     {
       "name": "Comments",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -254,7 +271,6 @@
         "foreground": "#FF8080"
       }
     },
-    // ---- Font Styles ----
     {
       "name": "Markup - Italic",
       "scope": ["markup.italic"],
@@ -301,7 +317,6 @@
         "fontStyle": "underline"
       }
     },
-    // ---- Language Specific: Gleam ----
     {
       "name": "Gleam - Comments",
       "scope": [
@@ -346,7 +361,7 @@
       }
     },
     {
-      "name": "Gleam - Built-in Constants (True, False, Nil - if applicable) & Wildcard",
+      "name": "Gleam - Built-in Constants & Wildcard",
       "scope": [
         "constant.language.gleam",
         "variable.language.wildcard.gleam",
@@ -450,7 +465,6 @@
         "foreground": "#8e8e8e90"
       }
     },
-    // ---- Language Specific: JSON ----
     {
       "name": "JSON Keys",
       "scope": ["source.json support.type.property-name.json"],
@@ -458,7 +472,6 @@
         "foreground": "#FF8FA3"
       }
     },
-    // ---- Language Specific: Markdown ----
     {
       "name": "Markdown - Plain Text, Table Content",
       "scope": [
@@ -563,7 +576,7 @@
       ],
       "settings": {
         "foreground": "#ffe3eb"
-      } // Syntax highlighting for the language inside will override
+      }
     },
     {
       "name": "Markdown - Fenced Code Block Punctuation (```)",
@@ -653,26 +666,25 @@
     },
     {
       "name": "Markdown - Embedded HTML Tag Punctuation (<, >, /)",
-      "scope": ["punctuation.definition.tag.html"], // Applied to HTML within Markdown
+      "scope": ["punctuation.definition.tag.html"],
       "settings": {
         "foreground": "#FF8FA390"
       }
     },
     {
       "name": "Markdown - Embedded HTML Attribute Names",
-      "scope": ["entity.other.attribute-name.html"], // Applied to HTML within Markdown
+      "scope": ["entity.other.attribute-name.html"],
       "settings": {
         "foreground": "#8e8e8e"
       }
     },
     {
       "name": "Markdown - Embedded HTML Attribute Values",
-      "scope": ["string.quoted.double.html", "string.quoted.single.html"], // Applied to HTML within Markdown
+      "scope": ["string.quoted.double.html", "string.quoted.single.html"],
       "settings": {
         "foreground": "#FF4D6D"
       }
     },
-    // ---- Language Specific: Protocol Buffers ----
     {
       "name": "Proto - Comments",
       "scope": [
@@ -763,7 +775,6 @@
         "foreground": "#8e8e8e"
       }
     },
-    // ---- Miscellaneous ----
     {
       "name": "ES7 Bind Operator (Specific JS syntax)",
       "scope": [

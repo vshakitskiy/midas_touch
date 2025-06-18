@@ -13,6 +13,12 @@
     "url": "https://github.com/vshakitskiy/midas_touch"
   },
   "icon": "icon.jpg",
+  "files": [
+    "themes/**/*.json",
+    "icon.jpg",
+    "README.md",
+    "LICENSE"
+  ],
   "categories": [
     "Themes"
   ],
@@ -22,7 +28,27 @@
         "label": "Midas Touch",
         "uiTheme": "vs-dark",
         "path": "./themes/Midas-Touch-color-theme.json"
+      },
+      {
+        "label": "Midas Touch (Prototype)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/midas-touch-proto-color-theme.json"
       }
     ]
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "generate-theme": "bun run scripts/generateTheme.ts",
+    "generate-theme-dev": "bun run --watch scripts/generateTheme.ts",
+    "check-format": "bunx prettier --check src/ scripts/",
+    "format": "bunx prettier --write src/ scripts/"
   }
 }
