@@ -2,8 +2,8 @@
   "name": "midas-touch",
   "displayName": "Midas Touch",
   "publisher": "vshakitskiy",
-  "description": "Wiskiy's custom theme, inspired by Kiss Of Life",
-  "version": "0.1.2",
+  "description": "🍣 amaranth & salmon flavored theme",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -27,12 +27,12 @@
       {
         "label": "Midas Touch",
         "uiTheme": "vs-dark",
-        "path": "./themes/Midas-Touch-color-theme.json"
+        "path": "./themes/midas-touch-color-theme.json"
       },
       {
-        "label": "Midas Touch (Prototype)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/midas-touch-proto-color-theme.json"
+        "label": "Midas Touch Light",
+        "uiTheme": "vs",
+        "path": "./themes/midas-touch-light-color-theme.json"
       }
     ]
   },

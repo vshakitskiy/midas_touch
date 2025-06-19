@@ -1,7 +1,6 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getProtoTokens(): TokenColor[] {
+export function getProtoTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
       name: "Proto - Comments",
@@ -10,17 +9,17 @@ export function getProtoTokens(): TokenColor[] {
         "comment.block.proto",
         "punctuation.definition.comment.proto",
       ],
-      settings: { foreground: colors.commentAlpha94 },
+      settings: { foreground: palette.commentAlpha94 },
     },
     {
       name: "Proto - Keywords",
       scope: ["keyword.proto", "keyword.other.proto"],
-      settings: { foreground: colors.greyLight },
+      settings: { foreground: palette.greyLight },
     },
     {
       name: "Proto - Storage Types (int32, string, bool, etc.)",
       scope: ["storage.type.proto", "constant.language.proto"],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Proto - Message and Enum Names, Package Names",
@@ -30,12 +29,12 @@ export function getProtoTokens(): TokenColor[] {
         "support.class.proto",
         "entity.name.package.proto",
       ],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Proto - Field Names, Enum Member Names",
       scope: ["variable.other.field.proto", "variable.other.enummember.proto"],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Proto - Service and RPC Method Names",
@@ -43,7 +42,7 @@ export function getProtoTokens(): TokenColor[] {
         "entity.name.function.service.proto",
         "entity.name.function.rpc.proto",
       ],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Proto - Field Numbers, Options, String Literals, Imported Paths",
@@ -55,7 +54,7 @@ export function getProtoTokens(): TokenColor[] {
         "string.quoted.double.include.proto",
         "string.quoted.single.include.proto",
       ],
-      settings: { foreground: colors.accentSecondary },
+      settings: { foreground: palette.accentSecondary },
     },
     {
       name: "Proto - Punctuation (;, {}, (), =)",
@@ -72,7 +71,7 @@ export function getProtoTokens(): TokenColor[] {
         "punctuation.separator.key-value.proto",
         "keyword.operator.assignment.proto",
       ],
-      settings: { foreground: colors.greyLight },
+      settings: { foreground: palette.greyLight },
     },
   ]
 }

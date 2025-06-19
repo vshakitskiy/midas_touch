@@ -1,17 +1,16 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getFontStyleTokens(): TokenColor[] {
+export function getFontStyleTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
       name: "Markup - Italic",
       scope: ["markup.italic"],
-      settings: { fontStyle: "italic", foreground: colors.foregroundPrimary },
+      settings: { fontStyle: "italic", foreground: palette.foregroundPrimary },
     },
     {
       name: "Markup - Bold",
       scope: ["markup.bold", "markup.bold string"],
-      settings: { fontStyle: "bold", foreground: colors.foregroundPrimary },
+      settings: { fontStyle: "bold", foreground: palette.foregroundPrimary },
     },
     {
       name: "Markup - Bold-Italic",
@@ -25,13 +24,13 @@ export function getFontStyleTokens(): TokenColor[] {
       ],
       settings: {
         fontStyle: "bold italic",
-        foreground: colors.foregroundPrimary,
+        foreground: palette.foregroundPrimary,
       },
     },
     {
       name: "Markup - Underline",
       scope: ["markup.underline"],
-      settings: { fontStyle: "underline", foreground: colors.accentPrimary },
+      settings: { fontStyle: "underline", foreground: palette.accentPrimary },
     },
     {
       name: "URL (links in comments, etc.)",

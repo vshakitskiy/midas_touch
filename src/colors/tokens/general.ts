@@ -1,12 +1,11 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getGeneralCodeTokens(): TokenColor[] {
+export function getGeneralCodeTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
       name: "Comments",
       scope: ["comment", "punctuation.definition.comment"],
-      settings: { foreground: colors.commentAlpha94 },
+      settings: { foreground: palette.commentAlpha94 },
     },
     {
       name: "Variables, Default Text, CSS Properties, JS Methods, Decorators",
@@ -36,7 +35,7 @@ export function getGeneralCodeTokens(): TokenColor[] {
         "tag.decorator.js entity.name.tag.js",
         "tag.decorator.js punctuation.definition.tag.js",
       ],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Keywords, Operators, Punctuation, Attributes, RegEx, Language Variables",
@@ -65,7 +64,7 @@ export function getGeneralCodeTokens(): TokenColor[] {
         "string.regexp",
         "constant.character.escape",
       ],
-      settings: { foreground: colors.greyLight },
+      settings: { foreground: palette.greyLight },
     },
     {
       name: "Tags, Functions, Numbers, Constants, Classes, HTML Attributes",
@@ -99,7 +98,7 @@ export function getGeneralCodeTokens(): TokenColor[] {
         "meta.attribute-selector.scss",
         "variable.parameter.misc.css",
       ],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Strings, Symbols, CSS IDs (Sass), Inserted Markup",
@@ -111,7 +110,7 @@ export function getGeneralCodeTokens(): TokenColor[] {
         "source.sass keyword.control",
         "markup.inserted",
       ],
-      settings: { foreground: colors.accentSecondary },
+      settings: { foreground: palette.accentSecondary },
     },
     {
       name: "Invalid, JS Sub-methods, Deleted Markup",
@@ -123,7 +122,7 @@ export function getGeneralCodeTokens(): TokenColor[] {
         "variable.other.class.js",
         "markup.deleted",
       ],
-      settings: { foreground: colors.error },
+      settings: { foreground: palette.error },
     },
   ]
 }

@@ -1,12 +1,11 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getJsonTokens(): TokenColor[] {
+export function getJsonTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
       name: "JSON Keys",
       scope: ["source.json support.type.property-name.json"],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
   ]
 }

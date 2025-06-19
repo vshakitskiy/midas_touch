@@ -1,7 +1,6 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getGleamTokens(): TokenColor[] {
+export function getGleamTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
       name: "Gleam - Comments",
@@ -9,7 +8,7 @@ export function getGleamTokens(): TokenColor[] {
         "comment.line.double-slash.gleam",
         "punctuation.definition.comment.gleam",
       ],
-      settings: { foreground: colors.commentAlpha94 },
+      settings: { foreground: palette.commentAlpha94 },
     },
     {
       name: "Gleam - Keywords (import, pub, fn, let, case, if, etc.)",
@@ -19,7 +18,7 @@ export function getGleamTokens(): TokenColor[] {
         "storage.type.gleam",
         "storage.modifier.gleam",
       ],
-      settings: { foreground: colors.greyLight },
+      settings: { foreground: palette.greyLight },
     },
     {
       name: "Gleam - Strings",
@@ -28,12 +27,12 @@ export function getGleamTokens(): TokenColor[] {
         "punctuation.definition.string.begin.gleam",
         "punctuation.definition.string.end.gleam",
       ],
-      settings: { foreground: colors.accentSecondary },
+      settings: { foreground: palette.accentSecondary },
     },
     {
       name: "Gleam - Numbers (Integers, Floats)",
       scope: ["constant.numeric.integer.gleam", "constant.numeric.float.gleam"],
-      settings: { foreground: colors.accentSecondary },
+      settings: { foreground: palette.accentSecondary },
     },
     {
       name: "Gleam - Built-in Constants & Wildcard",
@@ -42,7 +41,7 @@ export function getGleamTokens(): TokenColor[] {
         "variable.language.wildcard.gleam",
         "constant.language.placeholder.gleam",
       ],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Gleam - Operators & Pipe",
@@ -56,7 +55,7 @@ export function getGleamTokens(): TokenColor[] {
         "keyword.operator.capture.gleam",
         "keyword.operator.access.gleam",
       ],
-      settings: { foreground: colors.greyLight },
+      settings: { foreground: palette.greyLight },
     },
     {
       name: "Gleam - Type Names (Built-in: Int, String; Custom Types)",
@@ -65,7 +64,7 @@ export function getGleamTokens(): TokenColor[] {
         "support.type.primitive.gleam",
         "support.type.gleam",
       ],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Gleam - Module Names & Imported Modules/Functions",
@@ -75,17 +74,17 @@ export function getGleamTokens(): TokenColor[] {
         "variable.other.module.gleam",
         "entity.name.function.imported.gleam",
       ],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Gleam - Function Names (Definitions and Calls)",
       scope: ["entity.name.function.gleam", "support.function.gleam"],
-      settings: { foreground: colors.accentPrimary },
+      settings: { foreground: palette.accentPrimary },
     },
     {
       name: "Gleam - Function Parameters & Let Bindings",
       scope: ["variable.parameter.gleam", "variable.other.gleam"],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Gleam - Labels (in tuples/records, if distinct) & Case Pattern Variables",
@@ -94,7 +93,7 @@ export function getGleamTokens(): TokenColor[] {
         "entity.name.label.gleam",
         "variable.other.pattern.gleam",
       ],
-      settings: { foreground: colors.foregroundPrimary },
+      settings: { foreground: palette.foregroundPrimary },
     },
     {
       name: "Gleam - Attributes/Annotations (@external, @deprecated)",
@@ -103,7 +102,7 @@ export function getGleamTokens(): TokenColor[] {
         "storage.type.attribute.gleam",
         "entity.name.tag.attribute.gleam",
       ],
-      settings: { foreground: colors.greyLight, fontStyle: "italic" },
+      settings: { foreground: palette.greyLight, fontStyle: "italic" },
     },
     {
       name: "Gleam - Punctuation (Brackets, Braces, Commas, Colons)",
@@ -119,7 +118,7 @@ export function getGleamTokens(): TokenColor[] {
         "punctuation.separator.colon.gleam",
         "punctuation.terminator.statement.gleam",
       ],
-      settings: { foreground: colors.greyLightAlpha90 },
+      settings: { foreground: palette.greyLightAlpha90 },
     },
   ]
 }

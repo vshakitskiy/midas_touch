@@ -5,16 +5,16 @@ import { getJsonTokens } from "./tokens/json"
 import { getMarkdownTokens } from "./tokens/markdown"
 import { getProtoTokens } from "./tokens/proto"
 import { getMiscTokens } from "./tokens/misc"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getTokenColors(): TokenColor[] {
+export function getTokenColors(palette: ThemePalette): TokenColor[] {
   return [
-    ...getGeneralCodeTokens(),
-    ...getFontStyleTokens(),
-    ...getGleamTokens(),
-    ...getJsonTokens(),
-    ...getMarkdownTokens(),
-    ...getProtoTokens(),
-    ...getMiscTokens(),
+    ...getGeneralCodeTokens(palette),
+    ...getFontStyleTokens(palette),
+    ...getGleamTokens(palette),
+    ...getJsonTokens(palette),
+    ...getMarkdownTokens(palette),
+    ...getProtoTokens(palette),
+    ...getMiscTokens(palette),
   ]
 }

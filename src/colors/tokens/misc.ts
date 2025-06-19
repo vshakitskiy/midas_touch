@@ -1,15 +1,13 @@
-import { colors } from "@/palette"
-import type { TokenColor } from "@/types"
+import type { ThemePalette, TokenColor } from "@/types"
 
-export function getMiscTokens(): TokenColor[] {
+export function getMiscTokens(palette: ThemePalette): TokenColor[] {
   return [
     {
-      name: "ES7 Bind Operator (Specific JS syntax)",
+      name: "ES7 Bind Operator",
       scope: [
         "source.js constant.other.object.key.js string.unquoted.label.js",
       ],
-      settings: { fontStyle: "italic", foreground: colors.error },
+      settings: { fontStyle: "italic", foreground: palette.error },
     },
-    // Add any other truly miscellaneous, one-off token rules here
   ]
 }
