@@ -68,7 +68,7 @@ fn build_package_json(
     #("displayName", json.string("Midas Touch")),
     #("publisher", json.string("vshakitskiy")),
     #("description", json.string("wiskiy's views on flavored themes")),
-    #("version", json.string("1.0.0")),
+    #("version", json.string("2.0.0")),
     #("engines", json.object([#("vscode", json.string("^1.75.0"))])),
     #("license", json.string("MIT")),
     #(

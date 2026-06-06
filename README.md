@@ -1,6 +1,6 @@
-![theme preview](assets/preview.jpg)
-
 # Midas Touch
+
+![theme preview](assets/preview.jpg)
 
 wiskiy's views on flavored themes for VSCode/Cursor
 
