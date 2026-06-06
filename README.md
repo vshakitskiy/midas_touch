@@ -1,16 +1,8 @@
-![blabla](assets/preview.jpg)
-
 # Midas Touch
 
-Amaranth and salmon flavored dark theme for VSCode/Cursor.
+![theme preview](assets/preview.jpg)
 
-## Features
-
-- 🤩 Accurate and easy to navigate theme's structure.
-- 📝 Language-specific syntax highlighting for Gleam, Protobuf, and more.
-- 🌈 Customized cozy colors for terminal, inspired by Catppuccin colors.
-- 🔥 Generated with TypeScript script for easy customization and future expansion.
-- 🌙 Light and dark theme variants.
+wiskiy's views on flavored themes for VSCode/Cursor
 
 ## Installation
 

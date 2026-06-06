@@ -2,3 +2,7 @@ node_modules
 *.vsix
 .env
 *.temp.json
+*.beam
+*.ez
+/build
+erl_crash.dump
